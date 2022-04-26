@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">TriSelf Apps</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_daily">Daily</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_music">Music</string>
+    <string name="title_profile">Profile</string>
     <string name="lorem_ipsum">lorem ipsum</string>
     <string name="start">Start</string>
     <string name="pageone">Page One</string>
