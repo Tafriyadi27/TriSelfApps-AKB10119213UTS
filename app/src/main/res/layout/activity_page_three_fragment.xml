@@ -17,10 +17,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473"></TextView>
+        app:layout_constraintVertical_bias="0.362"></TextView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/starthere"
@@ -40,8 +40,8 @@
         tools:layout_editor_absoluteX="20dp"></androidx.appcompat.widget.AppCompatButton>
 
     <TextView
-        android:layout_width="150dp"
-        android:layout_height="145dp"
+        android:layout_width="141dp"
+        android:layout_height="132dp"
         android:gravity="center"
         android:text="@string/prevpage"
         android:textColor="@color/black"
