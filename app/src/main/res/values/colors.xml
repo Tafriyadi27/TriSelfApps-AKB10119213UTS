@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mantis">#7BC950</color>
+    <color name="light_green">#7CE577</color>
+    <color name="aquamarine">#9CFFD9</color>
+    <color name="mediumslateblue">#715AFF</color>
+    <color name="colorBlack87">#de000000</color>
+    <color name="cornflowerblue">#5887FF</color>
+    <color name="colorCoolGrey">#bababb</color>
+
 </resources>

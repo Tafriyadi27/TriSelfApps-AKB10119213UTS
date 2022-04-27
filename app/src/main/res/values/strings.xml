@@ -7,7 +7,10 @@
     <string name="title_profile">Profile</string>
     <string name="lorem_ipsum">lorem ipsum</string>
     <string name="start">Start</string>
-    <string name="pageone">Page One</string>
-    <string name="pagetwo">Page Two</string>
-    <string name="pagethree">Page Three</string>
+    <string name="pageone">Selamat Datang Di Aplikasi TriSelf Apps</string>
+    <string name="nextpage">Geser Kanan Untuk Ke Halaman Selanjutnya</string>
+    <string name="pagetwo">Sebuah Aplikasi Pengenalan Diri Seorang Developer Skull Breaker Yang Bernama Tri Tafriyadi</string>
+    <string name="pagethree">Untuk Mengenal Lebih Lanjut, Silahkan Tekan Tombol Dibawah ini</string>
+    <string name="swipe_right_to_nsecond_view">Geser kanan Untuk ke halaman selanjutnya</string>
+    <string name="prevpage">Geser Kiri Untuk Ke Halaman Sebelumnya</string>
 </resources>
