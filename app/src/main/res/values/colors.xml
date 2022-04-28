@@ -15,6 +15,10 @@
     <color name="cornflowerblue">#5887FF</color>
     <color name="colorCoolGrey">#bababb</color>
     <color name="spanishgreen">#168E48</color>
+    <color name="darthmouthgreen">#007537</color>
+    <color name="forestgreen">#04471C</color>
+    <color name="phthalogreen">#0D2818</color>
+    <color name="black0202">#020202</color>
     <color name="vividskyblue">#47A9C7</color>
 
 </resources>

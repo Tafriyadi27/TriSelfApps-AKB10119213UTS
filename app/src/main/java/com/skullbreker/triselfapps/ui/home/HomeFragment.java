@@ -5,11 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.skullbreker.triselfapps.MainActivity;
+import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -20,8 +23,8 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
+        ((MainActivity)getActivity()).updateStatusBarColor("#168E48");
         View root = binding.getRoot();
-
         return root;
     }
 
@@ -29,5 +32,6 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+
     }
 }

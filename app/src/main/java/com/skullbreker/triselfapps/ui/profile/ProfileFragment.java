@@ -10,22 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.databinding.FragmentProfileBinding;
-import com.skullbreker.triselfapps.ui.music.MusicViewModel;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ProfileViewModel profileViewModel =
-                new ViewModelProvider(this).get(ProfileViewModel.class);
 
         binding = FragmentProfileBinding.inflate(inflater, container, false);
+        ((MainActivity)getActivity()).updateStatusBarColor("#020202");
         View root = binding.getRoot();
 
-        final TextView textView = binding.textProfile;
-        profileViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

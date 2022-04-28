@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.databinding.FragmentMusicBinding;
 
 public class MusicFragment extends Fragment {
@@ -17,14 +18,11 @@ public class MusicFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        MusicViewModel musicViewModel =
-                new ViewModelProvider(this).get(MusicViewModel.class);
 
         binding = FragmentMusicBinding.inflate(inflater, container, false);
+        ((MainActivity)getActivity()).updateStatusBarColor("#0D2818");
         View root = binding.getRoot();
 
-        final TextView textView = binding.textMusic;
-        musicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

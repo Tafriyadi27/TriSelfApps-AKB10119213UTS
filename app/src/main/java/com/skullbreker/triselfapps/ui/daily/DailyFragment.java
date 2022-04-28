@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.databinding.FragmentDailyBinding;
 
 public class DailyFragment extends Fragment {
@@ -18,14 +19,11 @@ public class DailyFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DailyViewModel dailyViewModel =
-                new ViewModelProvider(this).get(DailyViewModel.class);
 
         binding = FragmentDailyBinding.inflate(inflater, container, false);
+        ((MainActivity)getActivity()).updateStatusBarColor("#007537");
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDaily;
-        dailyViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
