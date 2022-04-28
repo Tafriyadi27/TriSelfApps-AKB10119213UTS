@@ -8,24 +8,25 @@
     tools:context=".PageOneFragment">
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/pageone"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="40sp"
+        android:fontFamily="@font/playfairdisplay_semibolditalic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175"></TextView>
+        app:layout_constraintVertical_bias="0.175"></androidx.appcompat.widget.AppCompatTextView>
 
     <ImageView
-        android:layout_width="283dp"
-        android:layout_height="265dp"
+        android:layout_width="257dp"
+        android:layout_height="257dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/welcome"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,18 +38,19 @@
 
     </ImageView>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="137dp"
         android:layout_height="115dp"
         android:gravity="center"
         android:text="@string/nextpage"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:fontFamily="@font/playfairdisplay_medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"></TextView>
+        app:layout_constraintVertical_bias="1.0"></androidx.appcompat.widget.AppCompatTextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
