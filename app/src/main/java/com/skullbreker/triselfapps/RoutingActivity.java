@@ -11,7 +11,6 @@ import android.os.Handler;
 import java.util.Objects;
 public class RoutingActivity extends AppCompatActivity {
 
-    SharedPreferences prefs = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

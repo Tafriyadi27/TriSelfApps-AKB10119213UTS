@@ -13,4 +13,19 @@
     <string name="pagethree">Untuk Mengenal Lebih Lanjut, Silahkan Tekan Tombol Dibawah ini</string>
     <string name="swipe_right_to_nsecond_view">Geser kanan Untuk ke halaman selanjutnya</string>
     <string name="prevpage">Geser Kiri Untuk Ke Halaman Sebelumnya</string>
+    <string name="profile">PROFILE &amp; INTEREST</string>
+    <string name="name_profile">Tri Tafriyadi</string>
+    <string name="age">21 Tahun</string>
+    <string name="description">Gamers,Anak Rumahan, Terlihat Seperti Om-Om</string>
+    <string name="title_interest">INTEREST</string>
+    <string name="hobby">Hobby</string>
+    <string name="makes">Makes</string>
+    <string name="mikes">Mikes</string>
+    <string name="interest">Interest</string>
+    <string name="citacita">Cita-Cita</string>
+    <string name="gaming">Gaming</string>
+    <string name="sateayam">Sate Ayam</string>
+    <string name="capcin">Capcin</string>
+    <string name="games">Apex Legends,Rainbow Six Siege</string>
+    <string name="backend">Backend Developer</string>
 </resources>

@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.skullbreker.triselfapps.databinding.FragmentMusicBinding;
-import com.skullbreker.triselfapps.ui.home.HomeViewModel;
 
 public class MusicFragment extends Fragment {
     private FragmentMusicBinding binding;
