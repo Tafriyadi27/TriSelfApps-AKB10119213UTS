@@ -2,9 +2,11 @@ package com.skullbreker.triselfapps.ui.daily;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,7 @@ import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.database.Activities;
 
 import java.util.List;
+import java.util.ResourceBundle;
 
 public class ActivityListAdapter extends RecyclerView.Adapter<ActivityListAdapter.ActivityViewHolder>  {
     private final Context context;
@@ -36,6 +39,7 @@ public class ActivityListAdapter extends RecyclerView.Adapter<ActivityListAdapte
     @Override
     public void onBindViewHolder(@NonNull ActivityListAdapter.ActivityViewHolder holder, int position) {
         holder.kegiatan.setText((this.activitiesList.get(position).kegiatan));
+        holder.imagename.setImageDrawable(context.getResources().getDrawable(getDrawableByName(this.activitiesList.get(position).imagename)));
     }
 
     @Override
@@ -44,9 +48,16 @@ public class ActivityListAdapter extends RecyclerView.Adapter<ActivityListAdapte
     }
     public class ActivityViewHolder extends RecyclerView.ViewHolder{
         TextView kegiatan;
+        ImageView imagename;
         public ActivityViewHolder (@NonNull View itemView) {
             super(itemView);
-            kegiatan = itemView.findViewById(R.id.friend_recycle_activityname);
+            kegiatan = itemView.findViewById(R.id.activity_recycle_activityname);
+            imagename =itemView.findViewById(R.id.activity_recycle_image);
         }
+    }
+    private int getDrawableByName(String name){
+        Resources res = context.getResources();
+        final int resId = res.getIdentifier(name,"drawable",context.getPackageName());
+        return resId;
     }
 }

@@ -2,9 +2,11 @@ package com.skullbreker.triselfapps.ui.daily;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -36,6 +38,7 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
     @Override
     public void onBindViewHolder(@NonNull FriendsListAdapter.FriendViewHolder holder, int position) {
     holder.friendName.setText((this.friendList.get(position).friendName));
+    holder.imagename.setImageDrawable(context.getResources().getDrawable(getDrawableByName(this.friendList.get(position).imagename)));
     holder.codeName.setText((this.friendList.get(position).codeName));
     }
 
@@ -47,10 +50,17 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
     public class FriendViewHolder extends RecyclerView.ViewHolder{
         TextView friendName;
         TextView codeName;
+        ImageView imagename;
         public FriendViewHolder(@NonNull View itemView) {
             super(itemView);
             friendName = itemView.findViewById(R.id.friend_recycle_name);
+            imagename =itemView.findViewById(R.id.friend_recycle_image);
             codeName = itemView.findViewById(R.id.friend_recycle_codename);
         }
+    }
+    private int getDrawableByName(String name){
+        Resources res = context.getResources();
+        final int resId = res.getIdentifier(name,"drawable",context.getPackageName());
+        return resId;
     }
 }

@@ -9,13 +9,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:gravity="bottom"
         android:id="@+id/friend_recycle_name"
         style="@style/TextAppearance.MaterialComponents.Headline4"
         android:text="@string/backend">
     </TextView>
 
     <ImageView
-        android:layout_width="110dp"
+        android:layout_width="300dp"
         android:layout_height="110dp"
         android:layout_weight="1"
         android:id="@+id/friend_recycle_image"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/friend_recycle_codename"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
         android:text="@string/backend">
     </TextView>
 

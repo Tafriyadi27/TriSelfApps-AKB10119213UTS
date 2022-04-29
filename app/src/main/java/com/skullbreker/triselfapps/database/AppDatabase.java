@@ -10,7 +10,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import java.util.concurrent.Executors;
 
-@Database(entities = {Friend.class,Activities.class}, version = 1)
+@Database(entities = {Friend.class,Activities.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract FriendDao friendDao();
     public abstract ActivitiesDao activitiesDao();

@@ -15,17 +15,27 @@ public class Friend {
     @ColumnInfo(name ="code_name")
     public String codeName;
 
-    public Friend(String friendName,String codeName){
+    @ColumnInfo(name ="imagename")
+    public String imagename;
+
+    public Friend(String friendName,String codeName,String imagename){
         this.friendName = friendName;
         this.codeName = codeName;
+        this.imagename = imagename;
     }
 
     public static Friend[] isiData(){
         return new Friend[]{
-                new Friend("Denden Triana","Sakura"),
-                new Friend("Joyson Sitorus","Gigachad Enjoyer"),
-                new Friend("Najib Raffi Irdhana","Gay Mastah"),
-                new Friend("Muhammad Ridwan","Secondary Intel"),
+                new Friend("Denden Triana","Codename : Sakura","friendimage1"),
+                new Friend("Joyson Sitorus","Codename : Gigachad Enjoyer","friendimage2"),
+                new Friend("Najib Raffi Irdhana","Codename : Best Friends","friendimage3"),
+                new Friend("Rheza Pramana Putra D","Codename : Smart People","friendimage4"),
+                new Friend("Arisza Zufar F","Codename : Tryhard","friendimage5"),
+                new Friend("Tiyo Haryo S","Codename : Nyolo","friendimage6"),
+                new Friend("Moch Wandika Yusgiar","Codename : C1G0","friendimage7"),
+                new Friend("M Akbar Attamimi","Codename : Arab","friendimage8"),
+                new Friend("Muhammad Ridwan","Codename : Lyxiie","friendimage9"),
+                new Friend("Arham Jusni Indrawan","Codename : Sir_Eiji","friendimage10"),
         };
     }
 
