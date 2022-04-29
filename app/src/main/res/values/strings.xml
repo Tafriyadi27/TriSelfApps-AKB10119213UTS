@@ -28,4 +28,6 @@
     <string name="capcin">Capcin</string>
     <string name="games">Apex Legends,Rainbow Six Siege</string>
     <string name="backend">Backend Developer</string>
+    <string name="activity">Activity</string>
+    <string name="friends">friends</string>
 </resources>

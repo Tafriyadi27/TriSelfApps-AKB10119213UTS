@@ -11,6 +11,7 @@
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1275" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1275" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/font/playfuldisplay.xml" value="0.125" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_fragment.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_page_one_fragment.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_page_three_fragment.xml" value="0.15989583333333332" />
@@ -18,13 +19,18 @@
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_screen_slide.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/activity_splash.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/centerappbar.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_activity.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_daily.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_dashboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_friends.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_gallery.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_music.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_notifications.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_profile.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/friends_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_activities_rows.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_friend_rows.xml" value="0.1" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/toolbarhome.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
       </map>
