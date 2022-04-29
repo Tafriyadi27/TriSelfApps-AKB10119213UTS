@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.skullbreker.triselfapps.MainActivity;
+import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.databinding.FragmentMusicBinding;
 
 public class MusicFragment extends Fragment {
@@ -22,7 +23,8 @@ public class MusicFragment extends Fragment {
         binding = FragmentMusicBinding.inflate(inflater, container, false);
         ((MainActivity)getActivity()).updateStatusBarColor("#0D2818");
         View root = binding.getRoot();
-
+        TextView textTitle = getActivity().findViewById(R.id.appbar_title);
+        textTitle.setText(R.string.title_music);
         return root;
     }
 

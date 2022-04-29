@@ -25,6 +25,8 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         ((MainActivity)getActivity()).updateStatusBarColor("#168E48");
         View root = binding.getRoot();
+        TextView textTitle = getActivity().findViewById(R.id.appbar_title);
+        textTitle.setText(R.string.title_home);
         return root;
     }
 
