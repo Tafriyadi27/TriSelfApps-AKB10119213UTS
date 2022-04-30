@@ -11,6 +11,8 @@ public interface FriendDao {
     @Query("SELECT * FROM friend")
     List<Friend> getAllFriends();
 
+    @Query("DELETE FROM friend")
+    void deleteAllFriends();
     @Insert
     void insert(Friend... friends);
 }

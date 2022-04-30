@@ -30,7 +30,7 @@ public class Friend {
                 new Friend("Joyson Sitorus","Codename : TheBijiMan","friendimage2"),
                 new Friend("Najib Raffi Irdhana","Codename : MrDeath","friendimage3"),
                 new Friend("Rheza Pramana Putra D","Codename : Smart People","friendimage4"),
-                new Friend("Arisza Zufar F","Codename : Tryhard","friendimage5"),
+                new Friend("Arisza Zufar F","Codename : Pekerja Keras","friendimage5"),
                 new Friend("Tiyo Haryo S","Codename : Nyolo","friendimage6"),
                 new Friend("Moch Wandika Yusgiar","Codename : C1G0","friendimage7"),
                 new Friend("M Akbar Attamimi","Codename : Arab","friendimage8"),

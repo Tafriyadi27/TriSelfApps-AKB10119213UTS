@@ -1,7 +1,5 @@
 package com.skullbreker.triselfapps.ui.daily;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,23 +8,25 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-import com.skullbreker.triselfapps.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.skullbreker.triselfapps.database.Activities;
 import com.skullbreker.triselfapps.database.AppDatabase;
-import com.skullbreker.triselfapps.database.Friend;
 import com.skullbreker.triselfapps.databinding.ActivityFragmentBinding;
-import com.skullbreker.triselfapps.databinding.FriendsFragmentBinding;
 
 import java.util.List;
+import java.util.concurrent.Executors;
 
 public class ActivityFragment extends Fragment {
 
     private ActivityListAdapter activityListAdapter;
-
+    Button button;
     private ActivityFragmentBinding binding;
     public static ActivityFragment newInstance() {
         return new ActivityFragment();
@@ -41,6 +41,18 @@ public class ActivityFragment extends Fragment {
         initRecycle();
 
         loadActivitiesList();
+
+        AppDatabase db =AppDatabase.getDbInstance((binding.getRoot().getContext()));
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        FloatingActionButton fabButton = binding.clearTable;
+        fabButton.setOnClickListener(view -> Executors.newSingleThreadExecutor().execute(() ->
+        {
+            db.activitiesDao().deleteAllActivities();
+            db.activitiesDao().insert(Activities.isiAktifitas());
+            handler.post(this::loadActivitiesList);
+        }));
+
 
         return root;
     }
