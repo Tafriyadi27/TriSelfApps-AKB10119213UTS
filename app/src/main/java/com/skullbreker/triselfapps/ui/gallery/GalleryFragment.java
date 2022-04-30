@@ -1,6 +1,8 @@
 package com.skullbreker.triselfapps.ui.gallery;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +15,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.R;
+import com.skullbreker.triselfapps.database.Activities;
 import com.skullbreker.triselfapps.database.AppDatabase;
 import com.skullbreker.triselfapps.database.Friend;
 import com.skullbreker.triselfapps.database.Gallery;
@@ -23,6 +27,7 @@ import com.skullbreker.triselfapps.ui.daily.FriendsFragment;
 import com.skullbreker.triselfapps.ui.daily.FriendsListAdapter;
 
 import java.util.List;
+import java.util.concurrent.Executors;
 
 public class GalleryFragment extends Fragment {
 
@@ -45,6 +50,17 @@ public class GalleryFragment extends Fragment {
 
         TextView textTitle = getActivity().findViewById(R.id.appbar_title);
         textTitle.setText(R.string.title_gallery);
+
+        AppDatabase db =AppDatabase.getDbInstance((binding.getRoot().getContext()));
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        FloatingActionButton fabButton = binding.clearTable;
+        fabButton.setOnClickListener(view -> Executors.newSingleThreadExecutor().execute(() ->
+        {
+            db.galleryDao().deleteAllGallery();
+            db.galleryDao().insert(Gallery.isiFoto());
+            handler.post(this::loadGalleryList);
+        }));
         return root;
     }
 
