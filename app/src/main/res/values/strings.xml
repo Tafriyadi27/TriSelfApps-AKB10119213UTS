@@ -30,4 +30,6 @@
     <string name="backend">Backend Developer</string>
     <string name="activity">Activity</string>
     <string name="friends">friends</string>
+    <string name="songs">songs</string>
+    <string name="videos">videos</string>
 </resources>

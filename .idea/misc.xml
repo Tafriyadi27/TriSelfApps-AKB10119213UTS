@@ -23,7 +23,7 @@
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_daily.xml" value="0.1" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_dashboard.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_friends.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_gallery.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_music.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/fragment_notifications.xml" value="0.17552083333333332" />
@@ -32,7 +32,10 @@
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_activities_rows.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_friend_rows.xml" value="0.1" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_gallery_rows.xml" value="0.1" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/recycle_songs_rows.xml" value="0.22" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/songs_fragment.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/toolbarhome.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/layout/videos_fragment.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/tafri/AndroidStudioProjects/TriSelfApps/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1485" />
       </map>
