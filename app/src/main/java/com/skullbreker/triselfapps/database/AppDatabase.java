@@ -28,8 +28,9 @@ public abstract class AppDatabase extends RoomDatabase {
                         @Override
                         public void onCreate(@NonNull SupportSQLiteDatabase db) {
                             super.onCreate(db);
-                            Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).friendDao().insert(Friend.isiData()));
                             Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).activitiesDao().insert(Activities.isiAktifitas()));
+                            Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).friendDao().insert(Friend.isiData()));
+
                         }
                     })
                     .build();

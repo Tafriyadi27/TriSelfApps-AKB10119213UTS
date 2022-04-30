@@ -27,8 +27,8 @@ public class Friend {
     public static Friend[] isiData(){
         return new Friend[]{
                 new Friend("Denden Triana","Codename : Sakura","friendimage1"),
-                new Friend("Joyson Sitorus","Codename : Gigachad Enjoyer","friendimage2"),
-                new Friend("Najib Raffi Irdhana","Codename : Best Friends","friendimage3"),
+                new Friend("Joyson Sitorus","Codename : TheBijiMan","friendimage2"),
+                new Friend("Najib Raffi Irdhana","Codename : MrDeath","friendimage3"),
                 new Friend("Rheza Pramana Putra D","Codename : Smart People","friendimage4"),
                 new Friend("Arisza Zufar F","Codename : Tryhard","friendimage5"),
                 new Friend("Tiyo Haryo S","Codename : Nyolo","friendimage6"),

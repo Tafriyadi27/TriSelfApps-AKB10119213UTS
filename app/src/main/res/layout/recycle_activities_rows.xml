@@ -29,7 +29,8 @@
             android:layout_gravity="center"
             android:id="@+id/activity_recycle_activityname"
             style="@style/TextAppearance.MaterialComponents.Headline4"
-            android:text="@string/backend">
+            android:text="@string/backend"
+            android:textColor="@color/black">
         </TextView>
     </LinearLayout>
 
