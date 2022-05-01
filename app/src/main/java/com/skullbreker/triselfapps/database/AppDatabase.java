@@ -11,12 +11,13 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import java.util.concurrent.Executors;
 
-@Database(entities = {Friend.class,Activities.class,Gallery.class,Song.class}, version = 4)
+@Database(entities = {Friend.class,Activities.class,Gallery.class,Song.class,Videos.class}, version = 5)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract FriendDao friendDao();
     public abstract ActivitiesDao activitiesDao();
     public abstract GalleryDao galleryDao();
     public abstract SongDao songDao();
+    public abstract VideosDao videosDao();
 
         private static AppDatabase INSTANCE;
 
@@ -35,6 +36,7 @@ public abstract class AppDatabase extends RoomDatabase {
                             Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).friendDao().insert(Friend.isiData()));
                             Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).galleryDao().insert(Gallery.isiFoto()));
                             Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).songDao().insert(Song.isiLagu()));
+                            Executors.newSingleThreadExecutor().execute(() -> getDbInstance(context).videosDao().insert(Videos.isiVideo()));
                         }
                     })
                     .build();
