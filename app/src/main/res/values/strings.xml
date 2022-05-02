@@ -32,4 +32,8 @@
     <string name="friends">friends</string>
     <string name="songs">songs</string>
     <string name="videos">videos</string>
+    <string name="profile1">profile</string>
+    <string name="contact">contact</string>
+    <string name="findme">find me</string>
+    <string name="about">about</string>
 </resources>
