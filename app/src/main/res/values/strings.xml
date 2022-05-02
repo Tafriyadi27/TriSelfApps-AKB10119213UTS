@@ -32,8 +32,13 @@
     <string name="friends">friends</string>
     <string name="songs">songs</string>
     <string name="videos">videos</string>
-    <string name="profile1">profile</string>
+    <string name="profile1">PROFILE</string>
     <string name="contact">contact</string>
     <string name="findme">find me</string>
     <string name="about">about</string>
+    <string name="nama">NAMA</string>
+    <string name="umur">UMUR</string>
+    <string name="deskripsi">DESKRIPSI DIRI</string>
+    <string name="codename">CODENAME</string>
+    <string name="detail_codename">Ace Of Slugger,Skull Breaker,TrippyTeri,QuicklyBubble158</string>
 </resources>
