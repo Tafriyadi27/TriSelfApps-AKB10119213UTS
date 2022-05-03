@@ -61,6 +61,19 @@ public class ContactFragment extends Fragment {
                         Uri.parse("https://instagram.com/quicklybubble158")));
             }
         });
+        TextView teleText = binding.texttele;
+        teleText.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.telegram.me/Tafriyadi27"));
+            startActivity(intent);
+        });
+        TextView twitterText = binding.texttwitter;
+        twitterText.setOnClickListener(view -> {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?screen_name=Tafriyadi273")));
+            }catch (Exception e) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/#!/Tafriyadi273")));
+            }
+        });
         return binding.getRoot();
     }
 
