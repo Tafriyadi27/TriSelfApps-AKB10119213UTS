@@ -28,11 +28,6 @@
             android:layout_height="wrap_content"
             android:text="@string/findme" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about" />
-
     </com.google.android.material.tabs.TabLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,4 +40,17 @@
         android:id="@+id/profile_linear"
         app:layout_constraintTop_toBottomOf="@id/profile_linear">
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttoninfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/png_clipart_information_technology_computer_icons_info_miscellaneous_logo"
+        app:tint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

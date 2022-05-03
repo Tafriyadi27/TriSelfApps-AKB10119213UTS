@@ -1,5 +1,6 @@
 package com.skullbreker.triselfapps.ui.profile;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.R;
@@ -48,6 +50,13 @@ public class ProfileFragment extends Fragment {
 
             }
         });
+        FloatingActionButton fab = binding.buttoninfo;
+        fab.setOnClickListener(view -> {
+            final Dialog dialog = new Dialog(binding.getRoot().getContext());
+            dialog.setContentView(R.layout.about_fragment);
+            dialog.setTitle("About");
+            dialog.show();
+        });
         return root;
     }
     private void selectedTab(int position) {
@@ -56,8 +65,6 @@ public class ProfileFragment extends Fragment {
             tabFragment = new ContactFragment();
         } else if(position == 2) {
             tabFragment = new FindmeFragment();
-        } else if(position == 3) {
-            tabFragment = new AboutFragment();
         } else {
             tabFragment = new DetailProfileFragment();
         }

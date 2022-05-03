@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.skullbreker.triselfapps" >
-
+    package="com.skullbreker.triselfapps">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TriSelfApps" >
+        android:theme="@style/Theme.TriSelfApps">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".RoutingActivity"
-            android:exported="true"
             android:configChanges="orientation"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,38 +33,37 @@
         </activity>
         <activity
             android:name=".PageThreeFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".PageTwoFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".PageOneFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ScreenSlidePagerActivity"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait">
-        </activity>
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
