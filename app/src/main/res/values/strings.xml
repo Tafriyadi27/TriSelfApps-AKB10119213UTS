@@ -46,4 +46,10 @@
     <string name="gmail">skullbreaker@gmail.com</string>
     <string name="instagram">quicklybubble158</string>
     <string name="twitter">Tafriyadi273</string>
+    <string name="findme1">FIND ME</string>
+    <string name="findmehere">Find Me Here</string>
+    <string name="about1">ABOUT</string>
+    <string name="version">1.0.0</string>
+    <string name="copyright">Copyright 2022</string>
+
 </resources>
