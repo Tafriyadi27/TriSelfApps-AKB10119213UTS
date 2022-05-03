@@ -14,20 +14,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.tabs.TabLayout;
 import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.databinding.FindmeFragmentBinding;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FindmeFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
     private FindmeFragmentBinding binding;
-    private FindmeViewModel mViewModel;
 
     public static FindmeFragment newInstance() {
         return new FindmeFragment();
@@ -45,10 +50,24 @@ public class FindmeFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        LatLngBounds.Builder builder = new LatLngBounds.Builder();
+        List<Marker> markers = new ArrayList<>();
+        markers.add(googleMap.addMarker(new MarkerOptions()
+        .position(new LatLng(-6.83167496447813, 107.61718502947778))
+        .title("Delichip Cake Shop")));
+        for(Marker m: markers)
+            {
+                builder.include(m.getPosition());
+            }
+            LatLngBounds bounds = builder.build();
 
-        LatLng delichip = new LatLng(-6.831668,107.614997);
-        googleMap.addMarker(new MarkerOptions().position(delichip).title("delichip"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(delichip));
+            int padding = 0;
+            CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds,512,200,padding);
+
+            googleMap.moveCamera(cu);
+//        LatLng delichip = new LatLng(-6.831668,107.614997);
+//        googleMap.addMarker(new MarkerOptions().position(delichip).title("delichip"));
+//        googleMap.moveCamera(CameraUpdateFactory.newLatLng(delichip));
     }
 
 }

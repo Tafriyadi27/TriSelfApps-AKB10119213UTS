@@ -16,7 +16,6 @@ import com.skullbreker.triselfapps.R;
 
 public class DetailProfileFragment extends Fragment {
 
-    private DetailProfileViewModel mViewModel;
 
     public static DetailProfileFragment newInstance() {
         return new DetailProfileFragment();

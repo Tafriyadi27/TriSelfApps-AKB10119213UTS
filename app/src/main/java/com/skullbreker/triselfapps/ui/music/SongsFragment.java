@@ -32,7 +32,6 @@ import java.util.concurrent.Executors;
 
 public class SongsFragment extends Fragment {
 
-    private SongsViewModel mViewModel;
     private SongsListAdapter songsListAdapter;
     private SongsFragmentBinding binding;
     public static SongsFragment newInstance() {

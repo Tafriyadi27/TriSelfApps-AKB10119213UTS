@@ -24,7 +24,6 @@ import com.skullbreker.triselfapps.databinding.FragmentProfileBinding;
 
 public class ContactFragment extends Fragment {
     private ContactFragmentBinding binding;
-    private ContactViewModel mViewModel;
 
     public static ContactFragment newInstance() {
         return new ContactFragment();

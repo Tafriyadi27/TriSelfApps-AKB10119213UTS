@@ -25,7 +25,6 @@ import java.util.List;
 
 public class VideosFragment extends Fragment {
 
-    private VideosViewModel mViewModel;
     private VideosListAdapter videosListAdapter;
     private VideosFragmentBinding binding;
     public static VideosFragment newInstance() {
