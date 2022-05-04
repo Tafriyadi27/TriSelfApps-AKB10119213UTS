@@ -9,6 +9,11 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import java.util.Objects;
+
+// Tanggal Pengerjaan   : 25 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class RoutingActivity extends AppCompatActivity {
 
     @Override

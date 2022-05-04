@@ -9,6 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
+// Tanggal Pengerjaan   : 25 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 @SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
 @Override

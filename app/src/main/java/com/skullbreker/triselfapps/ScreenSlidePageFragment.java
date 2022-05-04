@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
+// Tanggal Pengerjaan   : 25 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class ScreenSlidePageFragment extends Fragment {
 
     private ViewGroup vGroup;

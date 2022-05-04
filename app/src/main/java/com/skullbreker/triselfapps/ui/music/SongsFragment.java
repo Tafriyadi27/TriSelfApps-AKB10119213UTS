@@ -30,6 +30,10 @@ import com.skullbreker.triselfapps.ui.daily.ActivityListAdapter;
 import java.util.List;
 import java.util.concurrent.Executors;
 
+// Tanggal Pengerjaan   : 30 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class SongsFragment extends Fragment {
 
     private SongsListAdapter songsListAdapter;

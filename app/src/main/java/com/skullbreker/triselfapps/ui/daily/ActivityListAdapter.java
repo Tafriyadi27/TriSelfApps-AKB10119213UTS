@@ -18,6 +18,10 @@ import com.skullbreker.triselfapps.database.Activities;
 import java.util.List;
 import java.util.ResourceBundle;
 
+// Tanggal Pengerjaan   : 29 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class ActivityListAdapter extends RecyclerView.Adapter<ActivityListAdapter.ActivityViewHolder>  {
     private final Context context;
     private List<Activities> activitiesList;

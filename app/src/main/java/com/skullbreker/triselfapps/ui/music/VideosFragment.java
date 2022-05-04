@@ -23,6 +23,10 @@ import com.skullbreker.triselfapps.databinding.VideosFragmentBinding;
 
 import java.util.List;
 
+// Tanggal Pengerjaan   : 30 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class VideosFragment extends Fragment {
 
     private VideosListAdapter videosListAdapter;

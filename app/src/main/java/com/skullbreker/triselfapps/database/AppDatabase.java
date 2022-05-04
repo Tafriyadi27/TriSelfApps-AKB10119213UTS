@@ -11,6 +11,10 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import java.util.concurrent.Executors;
 
+// Tanggal Pengerjaan   : 29 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 @Database(entities = {Friend.class,Activities.class,Gallery.class,Song.class,Videos.class}, version = 5)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract FriendDao friendDao();

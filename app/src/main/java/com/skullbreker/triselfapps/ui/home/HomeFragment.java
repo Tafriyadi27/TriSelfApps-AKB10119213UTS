@@ -15,6 +15,10 @@ import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.databinding.FragmentHomeBinding;
 
+// Tanggal Pengerjaan   : 25 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;

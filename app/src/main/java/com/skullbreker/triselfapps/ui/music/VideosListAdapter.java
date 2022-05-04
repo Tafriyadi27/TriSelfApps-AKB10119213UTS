@@ -20,6 +20,10 @@ import com.skullbreker.triselfapps.database.Videos;
 
 import java.util.List;
 
+// Tanggal Pengerjaan   : 30 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class VideosListAdapter extends RecyclerView.Adapter<VideosListAdapter.VideosViewHolder> {
     private List<Videos> videoList;
     private Lifecycle lifecycle;

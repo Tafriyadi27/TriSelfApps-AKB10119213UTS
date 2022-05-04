@@ -17,6 +17,10 @@ import com.skullbreker.triselfapps.MainActivity;
 import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.databinding.FragmentDailyBinding;
 
+// Tanggal Pengerjaan   : 26 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class DailyFragment extends Fragment {
 
     private FragmentDailyBinding binding;

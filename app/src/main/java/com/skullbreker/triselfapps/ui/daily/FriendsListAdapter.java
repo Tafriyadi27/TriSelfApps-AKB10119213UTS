@@ -17,6 +17,10 @@ import com.skullbreker.triselfapps.database.Friend;
 
 import java.util.List;
 
+// Tanggal Pengerjaan   : 29 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.FriendViewHolder> {
     private final Context context;
     private List<Friend> friendList;

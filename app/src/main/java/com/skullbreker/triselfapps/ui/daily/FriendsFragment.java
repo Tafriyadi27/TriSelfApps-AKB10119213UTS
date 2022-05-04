@@ -27,6 +27,10 @@ import com.skullbreker.triselfapps.database.AppDatabase;
 import java.util.List;
 import java.util.concurrent.Executors;
 
+// Tanggal Pengerjaan   : 29 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class FriendsFragment extends Fragment {
 
     private FriendsListAdapter friendListAdapter;

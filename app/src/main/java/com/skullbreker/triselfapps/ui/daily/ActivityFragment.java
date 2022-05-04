@@ -23,6 +23,10 @@ import com.skullbreker.triselfapps.databinding.ActivityFragmentBinding;
 import java.util.List;
 import java.util.concurrent.Executors;
 
+// Tanggal Pengerjaan   : 29 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class ActivityFragment extends Fragment {
 
     private ActivityListAdapter activityListAdapter;

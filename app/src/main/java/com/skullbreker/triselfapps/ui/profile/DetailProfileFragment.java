@@ -14,6 +14,10 @@ import android.view.ViewGroup;
 
 import com.skullbreker.triselfapps.R;
 
+// Tanggal Pengerjaan   : 2 Mei 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class DetailProfileFragment extends Fragment {
 
 

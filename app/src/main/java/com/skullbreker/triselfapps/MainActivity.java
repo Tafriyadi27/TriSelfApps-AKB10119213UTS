@@ -20,6 +20,10 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.skullbreker.triselfapps.databinding.ActivityMainBinding;
 
+// Tanggal Pengerjaan   : 25 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

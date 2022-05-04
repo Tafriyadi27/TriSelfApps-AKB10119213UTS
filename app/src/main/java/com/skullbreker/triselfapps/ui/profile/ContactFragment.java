@@ -22,6 +22,10 @@ import com.skullbreker.triselfapps.databinding.ContactFragmentBinding;
 import com.skullbreker.triselfapps.databinding.FragmentMusicBinding;
 import com.skullbreker.triselfapps.databinding.FragmentProfileBinding;
 
+// Tanggal Pengerjaan   : 2 Mei 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class ContactFragment extends Fragment {
     private ContactFragmentBinding binding;
 

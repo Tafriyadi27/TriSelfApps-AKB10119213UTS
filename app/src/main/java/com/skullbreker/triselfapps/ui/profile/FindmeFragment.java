@@ -30,6 +30,10 @@ import com.skullbreker.triselfapps.databinding.FindmeFragmentBinding;
 import java.util.ArrayList;
 import java.util.List;
 
+// Tanggal Pengerjaan   : 2 Mei 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class FindmeFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
     private FindmeFragmentBinding binding;

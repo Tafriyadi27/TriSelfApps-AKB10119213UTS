@@ -19,6 +19,10 @@ import com.skullbreker.triselfapps.ui.daily.ActivityListAdapter;
 
 import java.util.List;
 
+// Tanggal Pengerjaan   : 30 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class SongsListAdapter extends RecyclerView.Adapter<SongsListAdapter.SongsViewHolder> {
     private final Context context;
     private List<Song> songsList;

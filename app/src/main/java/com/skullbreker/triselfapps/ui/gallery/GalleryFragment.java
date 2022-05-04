@@ -29,6 +29,10 @@ import com.skullbreker.triselfapps.ui.daily.FriendsListAdapter;
 import java.util.List;
 import java.util.concurrent.Executors;
 
+// Tanggal Pengerjaan   : 26 April 2022
+// Nama                 : Tri Tafriyadi
+// NIM                  : 10119213
+// Kelas                : IF-6
 public class GalleryFragment extends Fragment {
 
     private GalleryListAdapter galleryListAdapter;
