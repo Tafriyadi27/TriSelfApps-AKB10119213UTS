@@ -9,8 +9,12 @@
     <string name="start">Start</string>
     <string name="pageone">Selamat Datang Di Aplikasi TriSelf Apps</string>
     <string name="nextpage">Geser Kanan Untuk Ke Halaman Selanjutnya</string>
-    <string name="pagetwo">Sebuah Aplikasi Pengenalan Diri Seorang Developer Skull Breaker Yang Bernama Tri Tafriyadi</string>
-    <string name="pagethree">Untuk Mengenal Lebih Lanjut, Silahkan Tekan Tombol Dibawah ini</string>
+    <string name="tatacara">Tata Cara Penggunaan Aplikasi Triself Apps</string>
+    <string name="pagetwo">Klik Menu Yang Ada Di Bawah Aplikasi Untuk Melihat konten yang ada</string>
+    <string name="pagetwo1">Klik Menu Berupa Tab Untuk Melihat Konten Yang Ada(Letaknya Ada Diatas)</string>
+    <string name="pagetwo2">Klik Button Refresh Untuk Merefresh Konten/Pagenya</string>
+    <string name="pagetwo3">Klik Button Info Untuk Melihat Informasi Aplikasi Ini</string>
+    <string name="pagethree">Silahkan Tekan Tombol Dibawah ini</string>
     <string name="swipe_right_to_nsecond_view">Geser kanan Untuk ke halaman selanjutnya</string>
     <string name="prevpage">Geser Kiri Untuk Ke Halaman Sebelumnya</string>
     <string name="profile">PROFILE &amp; INTEREST</string>
