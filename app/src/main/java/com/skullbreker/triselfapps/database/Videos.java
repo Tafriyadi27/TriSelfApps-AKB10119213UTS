@@ -29,8 +29,8 @@ public class Videos {
                 new Videos("HhjHYkPQ8F0"),
                 new Videos("lzkKzZmRZk8"),
                 new Videos("nfVcDJ584RA"),
-                new Videos("qUL6yKvZgoM"),
-                new Videos("9KpO0HchcDg"),
+                new Videos("UjZqcDYbvAE"),
+                new Videos("Hh9yZWeTmVM"),
                 new Videos("bJu3BtVl3Hc"),
 
         };

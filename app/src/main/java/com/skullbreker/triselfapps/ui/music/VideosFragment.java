@@ -10,10 +10,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.skullbreker.triselfapps.R;
 import com.skullbreker.triselfapps.database.AppDatabase;
 import com.skullbreker.triselfapps.database.Song;
@@ -22,6 +25,7 @@ import com.skullbreker.triselfapps.databinding.SongsFragmentBinding;
 import com.skullbreker.triselfapps.databinding.VideosFragmentBinding;
 
 import java.util.List;
+import java.util.concurrent.Executors;
 
 // Tanggal Pengerjaan   : 30 April 2022
 // Nama                 : Tri Tafriyadi
@@ -44,6 +48,17 @@ public class VideosFragment extends Fragment {
         initRecycle();
 
         loadVideosList();
+
+        AppDatabase db =AppDatabase.getDbInstance((binding.getRoot().getContext()));
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        FloatingActionButton fabButton = binding.clearTable;
+        fabButton.setOnClickListener(view -> Executors.newSingleThreadExecutor().execute(() ->
+        {
+            db.videosDao().deleteAllVideos();
+            db.videosDao().insert(Videos.isiVideo());
+            handler.post(this::loadVideosList);
+        }));
 
         return root;
     }
