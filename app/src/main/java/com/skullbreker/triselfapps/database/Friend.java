@@ -32,7 +32,7 @@ public class Friend {
         return new Friend[]{
                 new Friend("Denden Triana","Codename : Sakura","friendimage1"),
                 new Friend("Joyson Sitorus","Codename : TheBijiMan","friendimage2"),
-                new Friend("Najib Raffi Irdhana","Codename : MrDeath","friendimage3"),
+                new Friend("Najib Raffi Irdiana","Codename : MrDeath","friendimage3"),
                 new Friend("Rheza Pramana Putra D","Codename : PrimeOfPram","friendimage4"),
                 new Friend("Arisza Zufar F","Codename : OnlyToday","friendimage5"),
                 new Friend("Tiyo Haryo S","Codename : Nyolo","friendimage6"),
