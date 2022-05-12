@@ -33,6 +33,17 @@ public class Gallery {
                 new Gallery("gallery10"),
                 new Gallery("gallery11"),
                 new Gallery("gallery12"),
+                new Gallery("gallery13"),
+                new Gallery("gallery14"),
+                new Gallery("gallery15"),
+                new Gallery("gallery16"),
+                new Gallery("gallery17"),
+                new Gallery("gallery18"),
+                new Gallery("gallery19"),
+                new Gallery("gallery20"),
+                new Gallery("gallery21"),
+                new Gallery("gallery22"),
+
         };
     }
 }
